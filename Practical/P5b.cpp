@@ -45,7 +45,7 @@ class Age
 
         void show()
         {
-            cout << "Current age: " << year << "years " << month << "months " << day << "days\n";
+            cout << "Current age: " << year << " years " << month << " months " << day << " days\n";
         }
 };
 
@@ -53,19 +53,15 @@ int main() {
     int dobYear, dobMonth, dobDay;
     int currentYear, currentMonth, currentDay;
 
-    // Input Date of Birth
-    cout << "Enter Date of Birth (YYYY MM DD): ";
-    cin >> dobYear >> dobMonth >> dobDay;
+    cout << "Enter Date of Birth (DD MM YYYY): ";
+    cin >> dobDay >> dobMonth >> dobYear;
 
-    // Input Current Date
-    cout << "Enter Current Date (YYYY MM DD): ";
-    cin >> currentYear >> currentMonth >> currentDay;
+    cout << "Enter Current Date (DD MM YYYY): ";
+    cin >> currentDay >> currentMonth >> currentYear;
 
-    // Create objects of Age class
     Age dob(dobYear, dobMonth, dobDay);
     Age currentDate(currentYear, currentMonth, currentDay);
 
-    // Calculate age using operator overloading
     Age age = currentDate - dob;
     age.show();
 }
