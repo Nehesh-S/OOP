@@ -30,12 +30,14 @@ class Age
             age.month = month - tmp.month;
             age.year = year - tmp.year;
 
-            if (age.day < 0) {
+            if (age.day < 0)
+            {
                 age.month--;
                 int prevMon = days(tmp.year, tmp.month);
                 age.day += prevMon;
             }
-            if (age.month < 0) {
+            if (age.month < 0)
+            {
                 age.year--;
                 age.month += 12;
             }
