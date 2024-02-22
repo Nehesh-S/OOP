@@ -30,11 +30,12 @@ class Array
                 for(int j = 0; j < c; j++)
                     sum += arr[i][j];
             }
-            cout << "Sum of all Values: " << sum << endl;
+            cout << "\nSum of all Values: " << sum << endl;
         }
 
         void DisplayArray(int r, int c)
         {
+            cout << endl;
             for(int i = 0; i < r; i++)
             {
                 for(int j = 0; j < c; j++)
